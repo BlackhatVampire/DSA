@@ -6,10 +6,8 @@ public:
         while (slow != fast) {
             slow = square(slow);
             fast = square(square(fast));
-            if (slow == 1 || fast == 1)
-                return true;
         }
-        return slow==1;
+        return slow==1;         // asking wheather slow and fast meet at 1 or not
     }
 
 public:
