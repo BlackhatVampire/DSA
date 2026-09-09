@@ -11,17 +11,17 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* curr = head;
         ListNode* prev = NULL;
-        ListNode* next = NULL;         // this next is a variable not related to -> next
-
+        ListNode* curr = head;
+        ListNode* next = NULL;
         while(curr!=NULL){
-            next = curr->next;
+            next = curr->next ;
             curr->next = prev;
             prev = curr;
             curr = next;
+
         }
-        return prev;         // return prev becuase curr = null and next = null ,,but prev is at the last element ...which is now our head
+        return prev;
 
     }
 };
