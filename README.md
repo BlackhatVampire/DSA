@@ -8,6 +8,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/BlackhatVampire/DSA/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/BlackhatVampire/DSA/tree/master/0075-sort-colors) |
 | [0141-linked-list-cycle](https://github.com/BlackhatVampire/DSA/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/BlackhatVampire/DSA/tree/master/0142-linked-list-cycle-ii) |
@@ -35,6 +36,7 @@
 ## Linked List
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/BlackhatVampire/DSA/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/BlackhatVampire/DSA/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/BlackhatVampire/DSA/tree/master/0142-linked-list-cycle-ii) |
 | [0206-reverse-linked-list](https://github.com/BlackhatVampire/DSA/tree/master/0206-reverse-linked-list) |
