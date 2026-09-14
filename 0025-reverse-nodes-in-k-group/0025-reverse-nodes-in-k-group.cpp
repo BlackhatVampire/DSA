@@ -12,38 +12,29 @@ class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
 
-        // Check whether k nodes are available
+        int count1 = 0;
         ListNode* temp = head;
-        int count = 0;
-
-        while(temp && count < k) {
+        while(temp){
             temp = temp->next;
-            count++;
+            count1 ++;
         }
-
-        if(count < k)
-            return head;
-
+        if(count1 <k) return head;
         ListNode* prev = NULL;
         ListNode* curr = head;
         ListNode* next;
 
-        int count2 = 0;        // reverse first k nodes
-        while(curr && count2 < k){
+        int count = 0;
+        while(curr && count<k){
             next = curr->next;
             curr->next = prev;
             prev = curr;
             curr = next;
-            count2++;
+            count++;
         }
-
-        // curr will be pointing to k+1 th node
-        // recursion for rest of the nodes n-k
         if(curr){
-            ListNode* newhead = reverseKGroup(curr, k);
+            ListNode* newhead=  reverseKGroup(curr, k);
             head->next = newhead;
         }
-
         return prev;
     }
 };
